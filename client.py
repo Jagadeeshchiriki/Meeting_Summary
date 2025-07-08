@@ -21,7 +21,7 @@ async def setup_agent():
        "summary": {
             "command": "python",
             "args": [
-                "server.py"
+                "summary.py"
             ] 
        }
 
