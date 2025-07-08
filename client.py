@@ -19,11 +19,9 @@ os.environ["GROQ_API_KEY"] = groq_key
 async def setup_agent():
     connections = {
        "summary": {
-            "command": "python",
-            "args": [
-                "summary.py"
-            ] 
-       }
+            "url":"https://mcpserver-iwbq.onrender.com/mcp",
+            "transport":"streamable_http"
+        }
 
  
     client = MultiServerMCPClient(connections)
