@@ -18,12 +18,12 @@ os.environ["GROQ_API_KEY"] = groq_key
 # ✅ Function to setup the agent
 async def setup_agent():
     connections = {
-        "summary": {
+       "summary": {
             "command": "python",
-            "args": ["summary.py"],
-            "transport": "stdio"      # or omit; stdio is the default when command+args are present
-        }
-    }
+            "args": [
+                "server.py"
+            ] 
+       }
 
  
     client = MultiServerMCPClient(connections)
