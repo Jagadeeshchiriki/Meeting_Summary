@@ -19,7 +19,7 @@ os.environ["GROQ_API_KEY"] = groq_key
 async def setup_agent():
     connections = {
        "summary": {
-            "url":"https://mcpserver-iwbq.onrender.com/mcp",
+            "url":"http://localhost:8000/mcp",
             "transport":"streamable_http"
         }
 
