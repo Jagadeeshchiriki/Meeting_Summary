@@ -88,4 +88,4 @@ async def get_summary(file_path: str) -> str:
     return transcript
 
 if __name__=="__main__":
-    mcp.run(transport="stdio")
+    mcp.run(transport="streamable-http")
